@@ -1,0 +1,32 @@
+package labs1;
+import java.util.Scanner;
+public class IncreasingNumber 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number:");
+		int num=sc.nextInt();
+		boolean b=false;
+		int number=num%10;
+		num=num/10;
+			while(num>0)
+			{
+				if(number<=num%10)
+				{
+					b=true;
+					break;
+				}
+				number=num%10;
+				num=num/10;
+			}
+		if(b)
+		{
+			System.out.println("digits are not in increasing order");
+		}
+		else
+		{
+			System.out.println("digits are in increasing order");
+		}
+	}
+}

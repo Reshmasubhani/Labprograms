@@ -1,0 +1,28 @@
+package labs1;
+import java.util.Scanner;
+public class TrrafficLights {
+
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter:\n1 Red \n2 yellow \n3 green");
+		int n=sc.nextInt();
+		String message="";
+		switch(n)
+		{
+			case 1:
+				message="stop";
+				break;
+			case 2:
+				message="ready";
+				break;
+			case 3:
+			  message="Go";
+			break;
+			default:
+				message="invalid input";
+
+		}
+		System.out.println(message);
+		}
+	}

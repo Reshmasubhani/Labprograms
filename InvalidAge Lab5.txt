@@ -1,0 +1,17 @@
+package lab5;
+
+//public class InvalidAge extends Exception {
+
+	//public static void main(String[] args) {
+		//// TODO Auto-generated method stub
+
+	//}
+
+//}
+public class InvalidAge extends RuntimeException
+{
+	public InvalidAge(String message)
+			{
+		       super(message);
+			}
+}

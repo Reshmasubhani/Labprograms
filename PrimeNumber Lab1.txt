@@ -1,0 +1,37 @@
+package labs1;
+import java.util.Scanner;
+public class PrimeNumber
+{
+
+	public static void main(String[] args)
+	{
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter start value::");
+	int start=sc.nextInt();
+	System.out.println("Enter end value:");
+	int end=sc.nextInt();
+	prime(start,end);
+	}
+	public static void prime(int start,int end)
+	{
+	int i;
+	int count=0;
+	while(start<=end)
+	{
+		for(i=2;i<=start;i++)
+		{
+			if(start%i==0)
+			{
+				break;
+			}
+		}
+		if(i==start)
+		{
+			System.out.println(i);
+			count++;
+		}
+	}
+
+	}
+
+}

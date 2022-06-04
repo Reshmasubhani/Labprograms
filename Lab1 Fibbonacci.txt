@@ -1,0 +1,23 @@
+package labs1;
+import java.util.Scanner;
+public class Fibbonacci {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=sc.nextInt();
+		for(int i=1;i<=num;i++)
+		{
+			System.out.println(printFibbonaci(i)+"");
+		}
+		}
+	private static int printFibbonaci(int currentNumber)
+	{
+		if(currentNumber==1 ||currentNumber==2)
+		{
+			return 1;
+			
+		}
+		return printFibbonaci(currentNumber-1)+printFibbonaci(currentNumber-2);
+	}
+}
+
